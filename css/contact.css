@@ -1,0 +1,37 @@
+
+div.col-md-3 div {
+  position:absolute;
+  height:0; 
+  width:100%;
+  background:rgba(0,0,0,.45); 
+  overflow:hidden;
+  bottom:10px; 
+  padding: 0 1%;
+  line-height:5%px;
+  color:#fff;
+  transition:height 3s;
+}
+div.col-md-3:hover .names {
+  height:20%;
+ }
+ div.col-md-3{
+  padding:0px;
+  position:relative; 
+  display:inline-block; 
+  background:#fff; 
+-webkit-box-shadow: -1px -3px 11px 7px rgba(163,163,160,1);
+-moz-box-shadow: -1px -3px 11px 7px rgba(163,163,160,1);
+box-shadow: -1px -3px 11px 7px rgba(163,163,160,1);
+}
+.custom{	 
+	margin-top:0px;
+	width:90%;
+	height:80%;
+	z-index: -1;
+	padding:0%;
+}
+.main{
+
+width:80%;
+height:100%;
+}
