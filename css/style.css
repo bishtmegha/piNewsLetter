@@ -36,7 +36,8 @@ div.Active{
 	-moz-border-radius: 50px; 
 	-webkit-border-radius: 50px; 
 	border-radius: 50px; 
-	border-top: thick double #FF6600;
+	border-top: thick solid #FF6600;
+	
 	}
 
 
@@ -75,7 +76,7 @@ width:100%;
 }
 .activeLine{
 
- border-top: thick double #FF6600;
+ border-top: thick solid #FF6600;
 }
 a.Active{
 background-color:#e0e0e0;
