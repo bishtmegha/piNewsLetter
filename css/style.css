@@ -1,7 +1,7 @@
 
 
 body {
-	 background-color: #e0e0e0;
+	 background-color:#e0e0e0;
 	 z-index: -2;
 }
 a.link .main_menu{
@@ -158,9 +158,10 @@ padding: 0px;
 .article
 {
 margin-top:0px;
-height:1000px;
+height:100%;
 border-color:  #ffff;
 background-color:white;
+padding:0px;
 }
 
 .nav li{

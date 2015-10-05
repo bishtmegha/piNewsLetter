@@ -12,10 +12,12 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<link href="css/brainteasers.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+	 <script src="js/brainteasers.js"></script>
 
   </head>
   <body>
@@ -55,12 +57,12 @@
 			</div>
 		</div>
 		<div class="row"  style="width:100%;padding:0%;margin-left:0%;margin-right:0%;background-ground:white;">
-			<div class="col-md-12" style="padding:0%;background-ground:white;">
+			<div class="col-md-12" style="padding:0%;background-ground:white;height:100%;">
 				<div class="article">
-				<div style="margin:auto;height:40%;width:50%">
+				<div style="margin:auto;height:60%;width:50%">
 				<table style="height:80%;width:100%;margin-top:5%;">
-						<tbody>
-						<tr>
+						<tbody id="crossword">
+						<tr id="1">
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
@@ -70,69 +72,69 @@
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td>S</td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-						</tr>
-						<tr>
-							<td>O</td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td>E</td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
+							<td class="cellActive">S</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 						</tr>
-						<tr>
+						<tr id="2">
+							<td class="cellActive">O</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td>M</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
+							<td class="cellActive">E</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 						</tr>
-						<tr>
+						<tr id="3">
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
+							<td class="cellActive">M</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td>E</td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-						</tr>
-						<tr>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td contenteditable='true'></td>
-							<td>W</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 						</tr>
-						<tr>
+						<tr id="4">
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td class="cellActive">E</td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+						</tr>
+						<tr id="5">
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td class="cellActive">W</td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+							<td contenteditable='true'></td>
+						</tr>
+						<tr id="6">
 					
-							<td>M</td>
+							<td class="cellActive">M</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
@@ -142,10 +144,10 @@
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td>T</td>
+							<td class="cellActive">T</td>
 							<td contenteditable='true'></td>
 						</tr>
-						<tr>
+						<tr id="7">
 		
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
@@ -154,7 +156,7 @@
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
-							<td>A</td>
+							<td class="cellActive">A</td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
 							<td contenteditable='true'></td>
@@ -163,7 +165,8 @@
 						<tbody>
 					</table>
 				</div>
-				<div style="">
+				<div  style="margin-left:45%;margin-top:5%"><button id="submit" type="button" class="btn btn-success">Submit</button></div>
+				<div style="margin-top:5%;margin-left:20%;">
 					<ol>
 					<li>An economic system where goods and services are exchanged for one another or from money</li>			
 					<li>Move Overseas</li>										
